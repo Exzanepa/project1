@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cure</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="active.js">
+    <link rel="stylesheet" href="index.html">
+    <link rel="stylesheet" href="register.html">
+    <link rel="stylesheet" href="about.html">
+    <link rel="stylesheet" href="contact.html">
+    <link rel="stylesheet" href="docs.html">
+</head>
+
+<body>
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a class="navbar-item"
+                href="file:///C:/Users/tanac/OneDrive/%E0%B9%80%E0%B8%94%E0%B8%AA%E0%B8%81%E0%B9%8C%E0%B8%97%E0%B9%87%E0%B8%AD%E0%B8%9B/%E0%B8%87%E0%B8%B2%E0%B8%99%E0%B9%81%E0%B8%AB%E0%B8%A5%E0%B8%B0/cure/html/index.html">
+                <button class="button is-large is-primary">
+                    <span class="icon is-medium">
+                        <i class="fas fa-heading fa-2x">Cure</i>
+                    </span>
+                </button>
+            </a>
+
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
+                data-target="navbarBasicExample">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+
+        <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-start">
+                <a class="navbar-item">
+                    Home
+                </a>
+
+                <a class="navbar-item" href="file:///C:/Users/tanac/OneDrive/%E0%B9%80%E0%B8%94%E0%B8%AA%E0%B8%81%E0%B9%8C%E0%B8%97%E0%B9%87%E0%B8%AD%E0%B8%9B/%E0%B8%87%E0%B8%B2%E0%B8%99%E0%B9%81%E0%B8%AB%E0%B8%A5%E0%B8%B0/cure/html/docs.html">
+                    Docs
+                </a>
+
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link">
+                        More
+                    </a>
+
+                    <div class="navbar-dropdown">
+                        <a class="navbar-item" href="file:///C:/Users/tanac/OneDrive/%E0%B9%80%E0%B8%94%E0%B8%AA%E0%B8%81%E0%B9%8C%E0%B8%97%E0%B9%87%E0%B8%AD%E0%B8%9B/%E0%B8%87%E0%B8%B2%E0%B8%99%E0%B9%81%E0%B8%AB%E0%B8%A5%E0%B8%B0/cure/html/about.html">
+                            About
+                        </a>
+                        <a class="navbar-item" href="file:///C:/Users/tanac/OneDrive/%E0%B9%80%E0%B8%94%E0%B8%AA%E0%B8%81%E0%B9%8C%E0%B8%97%E0%B9%87%E0%B8%AD%E0%B8%9B/%E0%B8%87%E0%B8%B2%E0%B8%99%E0%B9%81%E0%B8%AB%E0%B8%A5%E0%B8%B0/cure/html/contact.html">
+                            Contact
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="navbar-end">
+                <div class="navbar-item">
+                    <div class="buttons">
+                        <a class="button is-primary" href="file:///C:/Users/tanac/OneDrive/%E0%B9%80%E0%B8%94%E0%B8%AA%E0%B8%81%E0%B9%8C%E0%B8%97%E0%B9%87%E0%B8%AD%E0%B8%9B/%E0%B8%87%E0%B8%B2%E0%B8%99%E0%B9%81%E0%B8%AB%E0%B8%A5%E0%B8%B0/cure/html/register.html">
+                            <strong>Sign up</strong>
+                        </a>
+                        <a class="button is-light" href="file:///C:/Users/tanac/OneDrive/%E0%B9%80%E0%B8%94%E0%B8%AA%E0%B8%81%E0%B9%8C%E0%B8%97%E0%B9%87%E0%B8%AD%E0%B8%9B/%E0%B8%87%E0%B8%B2%E0%B8%99%E0%B9%81%E0%B8%AB%E0%B8%A5%E0%B8%B0/cure/html/login.html">
+                            Log in
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <section class="hero is-primary is-fullheight">
+        <section class="section is-medium">
+            <div class="container is-max-desktop">
+                <form class="box">
+                    <div class="buttons has-addons is-centered">
+                        <button class="button is-large is-primary">
+                            <span class="icon is-medium">
+                                <i class="fas fa-heading fa-2x">Cure</i>
+                            </span>
+                        </button>
+                    </div>
+                    <div class="field">
+                        <label class="label">Username</label>
+                        <div class="control">
+                            <input class="input" type="email" placeholder="Username">
+                        </div>
+                    </div>
+
+                    <div class="field">
+                        <label class="label">Password</label>
+                        <div class="control">
+                            <input class="input" type="password" placeholder="Password">
+                        </div>
+                    </div>
+                    <div class="buttons has-addons is-centered">
+                        <button class="button is-primary">Log in</button>
+                    </div>
+                    <div>
+                        <button class="button is-small is-fullwidth is-light">Forget password?</button>
+                    </div>
+                    <div>
+                        <button class="button is-small is-fullwidth is-light">Don't have an account? Register
+                            here</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+        </div>
+    </section>
+
+</body>
+
+</html>
