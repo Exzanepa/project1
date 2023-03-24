@@ -1,0 +1,137 @@
+{% load static %}
+
+
+<!DOCTYPE html>
+<html lang='en' dir='ltr'>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CURE</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+
+
+
+</head>
+
+
+
+
+<body>
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="https://bulma.io">
+                <img src="https://cdn.shopify.com/s/files/1/0605/9730/5590/files/curelogoblue.png?v=1642362022" width="56" height="14">
+            </a>
+
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
+                data-target="navbarBasicExample">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+
+        <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-start">
+                <a class="navbar-item" href="{% url 'login' %}">
+                    Home
+                </a>
+
+                <a class="navbar-item">
+                    Documentation
+                </a>
+
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link">
+                        More
+                    </a>
+
+                    <div class="navbar-dropdown">
+                        <a class="navbar-item">
+                            About
+                        </a>
+                        <a class="navbar-item">
+                            Jobs
+                        </a>
+                        <a class="navbar-item">
+                            Contact
+                        </a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item">
+                            Report an issue
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="navbar-end">
+                <div class="navbar-item">
+                    <div class="buttons">
+                        <a class="button is-info" href="{% url 'signup' %}">
+                            <strong>Sign up</strong>
+                        </a>
+                        <a class="button is-light" href="{% url 'login' %}">
+                            Log in
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+<body class="layout-default">
+    <section class="hero is-fullheight is-info ">
+          <div class="hero-body">
+            <div class="container">
+              <div class="columns is-centered">
+                <article class="card is-rounded">
+                  <div class="card-content">
+                    <h1 class="title">
+                                     
+                      <img src="https://cdn.shopify.com/s/files/1/0605/9730/5590/files/curelogoblue.png?v=1642362022" alt="logo" width="100" >
+                    </h1>
+                    <h5 class="fw-normal mb-1 pb-3" style="letter-spacing: 1px;">Registers</h5>
+      
+                    <form method='POST'>
+                  
+                      
+                        {{ form.as_p}}
+                        {% csrf_token %}
+                        <br>
+                        <input class= "button is-info mb-2 pb-lg-2"  type="submit" value="Sign Up">
+   
+                       
+         
+                     
+                     
+                     </form>
+                    
+
+
+
+
+
+
+
+
+                  </div>
+                </article>
+              </div>
+            </div>
+      </div>
+    </section>
+  </body>
+
+            

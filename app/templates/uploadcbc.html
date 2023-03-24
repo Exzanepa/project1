@@ -1,0 +1,31 @@
+{% extends 'template.html' %}
+{% block content %}
+
+<div class="section">
+    <div class="container">
+        <div class="columns">
+            <div class="column is -1">
+                <div class="box">
+                    <div class="field">
+                        <h1>upload cbc file</h1>
+                        <br>
+                        <form method="post" enctype="multipart/form-data">
+
+                            {% csrf_token %}
+
+                            {{ form.as_p }}
+                            <br>
+                            <button type="submit" class="button is-defult is-info is-light">Upload</button>
+                        </form>
+
+                    </div>
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}

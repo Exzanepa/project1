@@ -1,0 +1,245 @@
+{% load static %}
+
+
+<!DOCTYPE html>
+<html lang='en' dir='ltr'>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CURE</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+
+
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="{% static 'table/main.css'%}">
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.css">
+    <script type="text/javascript" charset="utf8"
+        src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.js"></script>
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> -->
+
+    <!-- For formatting dates -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.8.4/moment.min.js"></script>
+    <script src="//cdn.datatables.net/plug-ins/1.10.21/sorting/datetime-moment.js"></script>
+
+
+
+
+
+</head>
+
+<body>
+    <nav class="navbar " role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="https://bulma.io">
+                <img src="https://cdn.shopify.com/s/files/1/0605/9730/5590/files/curelogoblue.png?v=1642362022"
+                    width="56" height="14">
+            </a>
+
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
+                data-target="navbarBasicExample">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+
+        <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-start">
+                <a class="navbar-item" href="{% url 'base' %}">
+                    Home
+                </a>
+
+                <a class="navbar-item">
+                    Documentation
+                </a>
+
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link">
+                        More
+                    </a>
+
+                    <div class="navbar-dropdown">
+                        <a class="navbar-item">
+                            About
+                        </a>
+                        <a class="navbar-item">
+                            Jobs
+                        </a>
+                        <a class="navbar-item">
+                            Contact
+                        </a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item">
+                            Report an issue
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="navbar-end">
+                <div class="navbar-item">
+                    <div class="buttons">
+                        <!-- <a class="button is-primary" href="{% url 'signup' %}">
+                            <strong>Sign up</strong>
+                        </a> -->
+                        {% if user.is_authenticated %}
+                        <a class="button is-light" href="{% url 'logout' %}">
+                            Log out
+                        </a>
+                        {% else %}
+                        <a class="button is-light" href="{% url 'login' %}">
+                            Log in
+                        </a>
+                        {% endif %}
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="main-content columns is-fullheight ">
+
+
+
+        <!-- <aside class="column is-2 is-narrow-mobile is-fullheight section is-hidden-mobile">
+            <p class="menu-label is-hidden-touch">MENU</p>
+            <ul class="menu-list">
+                <li>
+                    <a href="{% url 'base' %}" class=" ">
+                        <span class="icon"><i class="fa fa-home"></i></span> Home
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class=''>
+                        <span class="icon "><i class="fa fa-table  "></i></span> Analytics
+                    </a>
+
+                    <ul>
+                        <li>
+                            <a href="{% url 'base' %}" class="">
+                                <span class="icon is-small"><i class="fa fa-link"></i></span> CBC
+                            </a>
+                        </li>
+
+
+
+
+                    </ul>
+                </li> -->
+
+
+
+
+
+
+                <!-- <li>
+                    <a href="#" class="">
+                        <span class="icon"><i class="fa fa-info"></i></span> About
+                    </a>
+                </li>
+            </ul>
+        </aside> -->
+
+
+
+
+
+        <!-- ----------- -->
+
+        <div class=" column is-auto">
+            <div class="section">
+
+                <div class="card">
+                    <div class="card-header">
+                        <p class="card-header-title has-background-info  has-text-primary-light "></p>
+                    </div>
+                    <div class="column">
+                        <div class="column is-1">
+                            <p class="menu-label is-hidden-touch">MENU</p>
+                            <ul class="menu-list">
+                                <li>
+                                    <a href="{% url 'base' %}" class=" ">
+                                        <span class="icon"><i class="fa fa-home"></i></span> Home
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class=''>
+                                        <span class="icon "><i class="fa fa-table  "></i></span> Analytics
+                                    </a>
+
+                                    <ul>
+                                        <li>
+                                            <a href="{% url 'base' %}" class="">
+                                                <span class="icon is-small"><i class="fa fa-link"></i></span> CBC
+                                            </a>
+                                        </li>
+
+
+
+
+                                    </ul>
+                                </li>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="column">
+
+
+                        <div class="column is-1">
+                            {% block content %}
+                            {% for post in posts %}
+
+
+
+
+                            {% endfor %}
+                            {% endblock %}
+
+
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+                </div>
+                <br />
+
+
+
+            </div>
+        </div>
+
+
+
+
+    </section>
+
+
+
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CURE</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+
+    <style>
+        h1 {
+            text-align: center;
+        }
+
+        h2 {
+            text-align: left;
+        }
+
+        h3 {
+            text-align: right;
+        }
+        h4 {
+            text-align:justify ;
+        }
+    </style>
+</head>
+
+<body>
+    <br>
+    <h1>Thalassemia automates statistical report </h1>
+    <!-- <h2>Heading 2 (left)</h2> -->
+    <h3> 7 March 2023 </h3>
+   
+    
+    <h4> Red cell indics : </h4>
+    
+    <p>  MCV  45 fl</p>  
+    <p>  MCV  22 pn</p>
+    <p>  MCHC  29 %</p>
+
+    <h4>  Morphology :</h4>
+
+    <p>  Microcytes 3+ </p>
+    <p>  Anisocytosis 1+   </p>
+    <p>  Hypochromia 2+</p>
+    <p>  Poikilocytosis 1+ </p>
+    <p>  Target 2+ </p>
+
+    <h4> Diagnosis(es) : </h4>
+    <p>
+        {{ps.description}}
+    </p>
+    
+        
+        
+        <hr>
+        <!-- {{ps.title}} -->
+        <img src="{{ps.image.path}}" height="400px">
+
+
+    <h5> report by </h5>
+    <br>
+
+    <h> Reyaa wongsawett </h>
+
+
+</body>
+
+</html>

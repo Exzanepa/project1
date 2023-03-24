@@ -1,0 +1,29 @@
+
+
+
+{% extends 'templatereport.html' %}
+{% block content %}
+
+<div class="section">
+  <div class="container">
+    <div class="columns">
+      <div class="column is -1">
+        <h1>mcv test. </h1>
+        <br>
+        {{ graph_html|safe }}  
+        <br>
+        <button class="button is-info is-light is-defult"><a href="{% url 'base' %}" >back</a></button>
+                        
+                        
+                    
+       
+        
+
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+{% endblock %}

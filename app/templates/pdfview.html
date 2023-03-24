@@ -1,0 +1,59 @@
+{% extends 'template.html' %}
+{% block content %}
+
+<div class="section">
+    <div class="container">
+        <div class="columns">
+            <div class="column is -1">
+
+
+
+
+
+
+                <div class="box">
+                   
+                        <br>
+                        <table id="file_list" class="display">
+                            <thead>
+                                <tr>
+                                    <th>file</th>
+
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for p in object_list %}
+                                <tr>
+                                    <td> <a href="{% url 'image-pdf-view' p.pk %}"><button
+                                                class="btn btn-primary">pdf</button></a></td>
+
+                                </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+
+                        <script>
+                            $(document).ready(function () {
+                                $('#file_list').DataTable();
+                            });
+                        </script>
+
+
+                    </div>
+                    <br>
+
+                </div>
+
+
+
+
+
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}a

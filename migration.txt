@@ -1,0 +1,8 @@
+python manage.py runserver
+python manage.py makemigrations
+python manage.py migrate
+
+python manage.py createsuperuser
+
+jj123456
+Pompay171239_
