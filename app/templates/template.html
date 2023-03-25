@@ -140,7 +140,7 @@
 
 
 
-                <!-- <li>
+        <!-- <li>
                     <a href="#" class="">
                         <span class="icon"><i class="fa fa-info"></i></span> About
                     </a>
@@ -161,9 +161,11 @@
                     <div class="card-header">
                         <p class="card-header-title has-background-info  has-text-primary-light "></p>
                     </div>
-                    <div class="column">
-                        <div class="column is-1">
-                            <p class="menu-label is-hidden-touch">MENU</p>
+                    <div class="columns">
+                        <div class="column is-narrow">
+                            <div class="column is-1">
+                                <p class="menu-label is-hidden-touch">MENU</p>
+                            </div>
                             <ul class="menu-list">
                                 <li>
                                     <a href="{% url 'base' %}" class=" ">
@@ -178,54 +180,22 @@
                                     <ul>
                                         <li>
                                             <a href="{% url 'base' %}" class="">
-                                                <span class="icon is-small"><i class="fa fa-link"></i></span> CBC1234
+                                                <span class="icon is-small"><i class="fa fa-link"></i></span> CBC
                                             </a>
                                         </li>
-
-
-
-
                                     </ul>
                                 </li>
-
+                            </ul>
                         </div>
-
-                    </div>
-
-
-
-                    <div class="column">
-
-
-                        <div class="column is-1">
-                            {% block content %}
-                            {% for post in posts %}
-
-
-
-
-                            {% endfor %}
-                            {% endblock %}
-
-
+                        <div class="column">
+                            <div class="box">
+                                <p class="title is-5">Flexible column</p>
+                                <p class="subtitle">This column will take up the remaining space available.</p>
+                            </div>
                         </div>
                     </div>
-
-
-
-
-
-
-
-
-
-
-
                 </div>
                 <br />
-
-
-
             </div>
         </div>
 
